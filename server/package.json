@@ -2,9 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon --watch \"src/**\" -ext \"js,json\" --exec \"node src/index.js\""
+    "dev": "nodemon --watch \"src/**\" -ext \"js,json\" --exec \"node src/index.js\"",
+    "server": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -14,9 +15,11 @@
     "dotenv": "^16.0.3",
     "exceljs": "^4.3.0",
     "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
     "mongoose": "^7.0.1",
     "nodemailer": "^6.9.1",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/nodemailer": "^6.4.7",
